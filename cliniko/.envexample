@@ -1,0 +1,3 @@
+CLINIKO_BASE_URL="https://api.{shard}.cliniko.com/v1"
+CLINIKO_API_KEY="CLINIKO_API_KEY"
+CLINIKO_USER="CLINIKO_USER"

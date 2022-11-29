@@ -1,0 +1,4 @@
+.venv\
+.env
+cliniko\.env
+init.bat

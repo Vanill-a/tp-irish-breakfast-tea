@@ -1,0 +1,127 @@
+{
+	"type": "modal",
+	"external_id": "modal_transfer_stock",
+    "callback_id": "submit_transfer_stock",
+	"title": {
+		"type": "plain_text",
+		"text": "Transfer Stock"
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Transfer"
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel"
+	},
+	"blocks": [
+		{
+			"type": "context",
+			"elements": [
+				{
+					"type": "plain_text",
+					"text": "XXX-ProductId-XXX",
+					"emoji": true
+				}
+			]
+		},
+		{
+			"type": "input",
+			"block_id": "block_source",
+			"label": {
+				"type": "plain_text",
+				"text": "Stock Source"
+			},
+			"element": {
+				"type": "static_select",
+				"action_id": "select_clinic_source",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select Source Clinic",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Bellbowrie",
+							"emoji": true
+						},
+                        "value": "Bellbowrie"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Kenmore",
+							"emoji": true
+						},
+                        "value": "Kenmore"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Karalee",
+							"emoji": true
+						},
+                        "value": "Karalee"
+					}
+				]
+			}
+		},
+		{
+			"type": "input",
+			"block_id": "block_target",
+			"label": {
+				"type": "plain_text",
+				"text": "Stock Destination"
+			},
+			"element": {
+				"type": "static_select",
+				"action_id": "select_clinic_target",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select Destination Clinic",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Bellbowrie",
+							"emoji": true
+						},
+                        "value": "Bellbowrie"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Kenmore",
+							"emoji": true
+						},
+                        "value": "Kenmore"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Karalee",
+							"emoji": true
+						},
+                        "value": "Karalee"
+					}
+				]
+			}
+		},
+		{
+			"type": "input",
+			"block_id": "block_amount",
+			"label": {
+				"type": "plain_text",
+				"text": "Transfer Amount"
+			},
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "text_transfer_amount"
+			}
+		}
+	]
+}

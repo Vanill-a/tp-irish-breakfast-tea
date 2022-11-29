@@ -1,0 +1,143 @@
+{
+	"type": "modal",
+	"external_id": "modal_adjust_stock",
+	"callback_id": "submit_adjust_stock",
+	"title": {
+		"type": "plain_text",
+		"text": "Adjust Stock Level"
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Create Adjustment"
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel"
+	},
+	"blocks": [
+		{
+			"type": "context",
+			"elements": [
+				{
+					"type": "plain_text",
+					"text": "XXX-ProductId-XXX",
+					"emoji": true
+				}
+			]
+		},
+		{
+			"type": "input",
+			"block_id": "block_type",
+			"label": {
+				"type": "plain_text",
+				"text": "Adjustment Type"
+			},
+			"element": {
+				"type": "static_select",
+				"action_id": "select_adjustment_type",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select Adjustment Type",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Stock Purchased (Increase)",
+							"emoji": true
+						},
+						"value": "Stock Purchase"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Stock Returned (Increase)",
+							"emoji": true
+						},
+						"value": "Returned"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Stock Damaged (Decrease)",
+							"emoji": true
+						},
+						"value": "Damaged"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Stock Expired (Decrease)",
+							"emoji": true
+						},
+						"value": "Out of Date"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Correction (Decrease)",
+							"emoji": true
+						},
+						"value": "Correction"
+					}
+				]
+			}
+		},
+		{
+			"type": "input",
+			"block_id": "block_target",
+			"label": {
+				"type": "plain_text",
+				"text": "Affected Clinic"
+			},
+			"element": {
+				"type": "static_select",
+				"action_id": "select_clinic_target",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select Affected Clinic",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Bellbowrie",
+							"emoji": true
+						},
+						"value": "Bellbowrie"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Kenmore",
+							"emoji": true
+						},
+						"value": "Kenmore"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Karalee",
+							"emoji": true
+						},
+						"value": "Karalee"
+					}
+				]
+			}
+		},
+		{
+			"type": "input",
+			"block_id": "block_amount",
+			"label": {
+				"type": "plain_text",
+				"text": "Amount"
+			},
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "text_amount"
+			}
+		}
+	]
+}

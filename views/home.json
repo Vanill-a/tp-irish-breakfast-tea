@@ -1,0 +1,136 @@
+{
+	"type": "home",
+	"blocks": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "Stock Monitor Tool",
+				"emoji": true
+			}
+		},
+		{
+			"type": "section",
+			"block_id": "secProductSelect",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Select Product"
+			},
+			"accessory": {
+				"action_id": "select_product",
+				"type": "external_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select an item",
+					"emoji": true
+				}
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "plain_text",
+				"text": "Product Notes:\n",
+				"emoji": true
+			}
+		},
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Edit Notes",
+						"emoji": true
+					},
+					"value": "click_me_123",
+					"action_id": "button_edit_notes"
+				},
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Transfer Stock",
+						"emoji": true
+					},
+					"value": "click_me_123",
+					"action_id": "button_transfer_stock"
+				},
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Adjust Stock",
+						"emoji": true
+					},
+					"value": "click_me_123",
+					"action_id": "button_adjust_stock"
+				},
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Sync Totals",
+						"emoji": true
+					},
+					"value": "click_me_123",
+					"action_id": "button_sync_stock"
+				}
+			]
+		},
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "Stock Levels",
+				"emoji": true
+			}
+		},
+		{
+			"type": "section",
+			"fields": [
+				{
+					"type": "mrkdwn",
+					"text": "*Bellbowrie*"
+				},
+				{
+					"type": "plain_text",
+					"text": "Bellbowrie Amount"
+				},
+				{
+					"type": "mrkdwn",
+					"text": "*Kenmore*"
+				},
+				{
+					"type": "plain_text",
+					"text": "Kenmore Amount"
+				},
+				{
+					"type": "mrkdwn",
+					"text": "*Karalee*"
+				},
+				{
+					"type": "plain_text",
+					"text": "Karalee Amount"
+				}
+			]
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"fields": [
+				{
+					"type": "mrkdwn",
+					"text": "*Total*"
+				},
+				{
+					"type": "plain_text",
+					"text": "Total Amount"
+				}
+			]
+		}
+	]
+}
